@@ -46,7 +46,8 @@ class CloneRepositoryStep implements ReleaseStepInterface
                 $repositoryUrl,
                 self::TARGET_DIR,
             ],
-            $releaseStepData->getTempDir()
+            $releaseStepData->getTempDir(),
+            null, null, 300
         );
 
         $output->writeln('<info>*</info> Cloning repository...');

@@ -4,8 +4,7 @@ module.exports = (api) => {
     return {
         presets: [
             ['@babel/preset-env', { modules: false }],
-            '@babel/preset-react',
         ],
-        plugins: ['@babel/plugin-transform-runtime']
+        plugins: ['@babel/plugin-transform-runtime'],
     };
 };
